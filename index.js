@@ -19,7 +19,7 @@ const seconds = date.getSeconds();
 
          
 const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', calendar: 'islamic' };
-const arabicDate = new Intl.DateTimeFormat('UR', options).format(date);
+const arabicDate = new Intl.DateTimeFormat('US', options).format(date);
 console.log(arabicDate);
 document.querySelector('#arabic-date').innerHTML=arabicDate;
 
